@@ -1,0 +1,471 @@
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(180deg,#000205,#021e52,#1d1d8d);
+    color:white;
+}
+
+/* MAIN */
+.main-content{
+    margin-left:70px;
+    padding:25px;
+    transition:0.3s;
+}
+
+#toggle:checked ~ .main-content{
+    margin-left:250px;
+}
+
+@media(max-width:768px){
+    .main-content{
+        margin-left:0 !important;
+    }
+}
+
+/* CARD */
+.card-box{
+    background:rgba(255,255,255,0.07);
+    border-radius:25px;
+    padding:20px;
+    border:1px solid rgba(0,183,255,0.2);
+    box-shadow:0 0 15px rgba(0,183,255,0.2);
+    margin-bottom:20px;
+}
+/* SMALL CARDS */
+.small-card{
+    text-align:center;
+    padding:15px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.05);
+}
+/* RECENT ACTIVITY */
+.activity{
+    display:flex;
+    justify-content:space-between;
+    padding:10px 0;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.value {
+    font-size: 16px;
+    font-weight: 500;
+}
+/* TITLE */
+.aboutsection-title{
+    font-size: 26px;
+    color:#00c6ff;
+    margin-bottom:15px;
+}
+
+/* TEAM */
+.aboutteam{
+    text-align:center;
+}
+
+.aboutteam img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    margin-bottom:10px;
+    border:2px solid #00c6ff;
+}
+
+/* FEATURE BOX */
+.aboutfeature{
+    text-align:center;
+    padding:15px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.05);
+}
+
+/* ICON */
+.abouticon{
+    font-size:25px;
+    margin-bottom:10px;
+    color:#00c6ff;
+}
+
+/*editprofile*/
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+@media(max-width:768px){
+    .-profile-grid {
+        grid-template-columns: 1fr;
+    }
+     .profile-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* INPUT */
+.form-control {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: white;
+}
+.form-control::placeholder {
+    color: #aaa;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 10px #00c6ff;
+    background: rgba(255,255,255,0.15);
+}
+/* BUTTON */
+.profile-btn-blue {
+    background: linear-gradient(90deg,#00c6ff,#0072ff);
+    border: none;
+    color: white;
+}
+
+.profile-btn-blue:hover {
+    opacity: 0.9;
+}
+/* PROFILE IMAGE */
+.profile-img-box {
+    text-align: center;
+}
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #00c6ff;
+    object-fit: cover;
+}
+.error {
+    color:red;
+    font-size:13px;
+}
+input.error-border {
+    border:1px solid red;
+}
+/* LABEL */
+.label {
+    font-size: 12px;
+    color: #9ddcff;
+}
+/* 🔥 BMI CIRCLE */
+.bmi-box {
+    text-align: center;
+}
+
+.bmi-value {
+    font-size: 45px;
+    color: #00c6ff;
+}
+
+.bmi-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.bmi-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(#00c6ff 0% 60%, rgba(255,255,255,0.1) 60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 25px rgba(0,198,255,0.5);
+}
+
+.bmi-inner {
+    width: 120px;
+    height: 120px;
+    background: #0f2027;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bmi-value {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.bmi-status {
+    font-size: 14px;
+    color: #8fdfff;
+}
+/* PROGRESS */
+.progress {
+    height: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.1);
+}
+
+.progress-bar {
+    background: linear-gradient(90deg,#00c6ff,#0072ff);
+}
+
+
+/* PLAN BOX */
+.plan-box {
+    background: rgba(0,198,255,0.1);
+    border-left: 4px solid #00c6ff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* FAQ */
+.accordion-button {
+    background: rgba(255,255,255,0.05);
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #00c6ff;
+    color: black;
+}
+
+.accordion-body {
+    background: rgba(255,255,255,0.05);
+    color: #ddd;
+}
+/* BUTTON */
+.button-btn-custom {
+    background: linear-gradient(90deg,#00c6ff,#0072ff);
+    border: none;
+    color: white;
+}
+
+.button-btn-custom:hover {
+    background: linear-gradient(90deg,#0072ff,#00c6ff);
+}
+/* HEADER */
+.header{
+    text-align:center;
+    padding:40px 20px 20px;
+}
+
+.header h1{
+    font-weight:700;
+}
+
+.header p{
+    color:#9fdcff;
+}
+h4{
+    margin-bottom:15px;
+}
+
+/* CONTAINER */
+.membership-container{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+/* CARD */
+.plan-card{
+    background: rgba(255,255,255,0.07);
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    transition:0.4s;
+    border:1px solid rgba(0,183,255,0.2);
+    position:relative;
+    overflow:hidden;
+}
+
+/* HOVER EFFECT */
+.plan-card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 0 25px rgba(0,183,255,0.6);
+}
+
+/* POPULAR TAG */
+.popular{
+    position:absolute;
+    top:15px;
+    right:-35px;
+    background:#00c6ff;
+    color:black;
+    padding:5px 40px;
+    transform:rotate(45deg);
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* PLAN TITLE */
+.plan-title{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+/* PRICE */
+.price{
+    font-size:40px;
+    font-weight:bold;
+    color:#00c6ff;
+}
+.dashboard-price{
+    font-size:28px;
+    color:#00c6ff;
+}
+
+/* FEATURES */
+.features{
+    margin-top:20px;
+    text-align:left;
+}
+
+.features li{
+    margin-bottom:10px;
+}
+
+/* BUTTON */
+.btn-join{
+    margin-top:20px;
+    width:100%;
+    border-radius:30px;
+    background:linear-gradient(90deg,#00c6ff,#0072ff);
+    border:none;
+    padding:10px;
+    color:white;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn-join:hover{
+    background:linear-gradient(90deg,#0072ff,#00c6ff);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .plan-card{
+        margin-bottom:20px;
+    }
+}
+
+/* MEAL CARD */
+.meal{
+    background:rgba(255,255,255,0.05);
+    padding:15px;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+/* TITLE */
+.meal h5{
+    color:#00c6ff;
+}
+/* CALORIES */
+.cal{
+    font-size:14px;
+    color:#9fdcff;
+}
+
+/* WATER BOX */
+.water-box{
+    text-align:center;
+    padding:20px;
+}
+
+/* BUTTON */
+.btn-main{
+    width:100%;
+    border-radius:25px;
+    background:linear-gradient(90deg,#00c6ff,#0072ff);
+    border:none;
+    padding:10px;
+    color:white;
+}
+
+/* PROFILE FLEX */
+.mprofile-flex {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* IMAGE */
+.mprofile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #00c6ff;
+}
+
+/* INFO */
+.mprofile-info h3 {
+    margin: 0;
+}
+
+.mprofile-info p {
+    margin: 2px 0;
+    color: #9ddcff;
+}
+.stat{
+    text-align:center;
+    padding:15px;
+    background:rgba(255,255,255,0.05);
+    border-radius:15px;
+}
+
+/* CARD */
+.changep-card-box {
+    max-width: 450px;
+    margin: auto;
+    padding: 25px;
+    background: #1e1e1e;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* BACK BUTTON */
+.back-arrow {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.back-arrow:hover {
+    color: #00ffae;
+}
+
+/* PASSWORD EYE */
+.changep-position-relative {
+    position: relative;
+}
+
+.changep-eye {
+    position: absolute;
+    right: 15px;
+    top: 38px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+/* ERROR */
+.changep-error {
+    color: red;
+    font-size: 13px;
+}
+
+.changep-error-border {
+    border: 1px solid red;
+}
+/* BUTTON */
+.dashboard-btn-main{
+    width:100%;
+    border-radius:20px;
+    background:linear-gradient(90deg,#00c6ff,#0072ff);
+    border:none;
+    padding:10px;
+    color:white;
+    margin-top:10px;
+}
